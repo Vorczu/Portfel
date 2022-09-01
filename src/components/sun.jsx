@@ -5,6 +5,6 @@ const sun = ({onClick}) => {
   return (
     <div className="sun celestial_standard">DA SUN</div>
   )
-}
+} 
 
 export default sun

@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <TestComp />
       </div>
-  )
+  ) 
 }
 
 export default App
