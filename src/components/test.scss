@@ -1,0 +1,80 @@
+
+.celestial_standard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 50px 140px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.sun{    
+    background-color: rgb(253, 200, 103);
+}
+
+.moon{
+    background-color: rgb(206, 206, 211);
+}
+
+.change_animation_out{
+    animation: sunSetter 3s ease-in-out forwards;
+}
+
+.change_animation_in{
+    animation: sunRiser 3s ease-in-out forwards;
+}
+
+.upper{
+    top: -430px;
+}
+.celiestial{
+    position: absolute;
+    right: 0;
+}
+
+@keyframes sunSetter {
+    0%{
+        transform: translateY(0) ;
+    }
+    10%{
+        transform: translateY(-30px) ;
+    }
+    100%{
+        transform:  translateY(1500px);
+    }
+}
+
+@keyframes sunRiser {
+    0%{
+        transform: translateY(-1500px);
+    }
+    90%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.day_night{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(16,82,142);
+    background: -moz-linear-gradient(0deg, rgba(16,82,142,1) 6%, rgba(13,42,82,1) 61%);
+    background: -webkit-linear-gradient(0deg, rgba(16,82,142,1) 6%, rgba(13,42,82,1) 61%);
+    background: linear-gradient(0deg, rgba(16,82,142,1) 6%, rgba(13,42,82,1) 61%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10528e",endColorstr="#0d2a52",GradientType=1);
+    z-index: -1;
+    transition: 1.3s ease-in-out;
+}

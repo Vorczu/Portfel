@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: rgb(242,136,53);
+    background: -moz-linear-gradient(0deg, rgba(242,136,53,1) 10%, rgba(240,183,69,1) 72%);
+    background: -webkit-linear-gradient(0deg, rgba(242,136,53,1) 10%, rgba(240,183,69,1) 72%);
+    background: linear-gradient(0deg, rgba(242,136,53,1) 10%, rgba(240,183,69,1) 72%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f28835",endColorstr="#f0b745",GradientType=1);
+    overflow: hidden;
+}
